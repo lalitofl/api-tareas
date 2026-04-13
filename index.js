@@ -6,9 +6,6 @@ const port = process.env.PORT || 3000;
 
 const urlMongoDb = process.env.MONGODB_URI; // 👈 CLAVE en Render para el despliegue
 
-// const urlMongoDb =
-//   "mongodb+srv://api_db_user:api123456@cluster0.jlxwa20.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
 async function startServer() {
   try {
     await mongoose.connect(urlMongoDb);
